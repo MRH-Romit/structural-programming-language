@@ -2,17 +2,22 @@
 
 int main()
 {
-    int rows, i, j;
-    int number = 1;
-    printf("Enter the number of rows for the pattern: ");
+    int rows;
+    printf("Enter the number of rows: ");
     scanf("%d", &rows);
-    for (i = 1; i <= rows; i++)
+
+    int num = 1;
+    for (int i = 1; i <= rows; i++)
     {
-        for (j = 1; j <= i; j++)
+        int temp = num;
+        for (int j = 1; j <= i; j++)
         {
-            printf("%d", number++);
+            printf("%d", temp);
+            temp++;
         }
+        num++;
         printf("\n");
     }
+
     return 0;
 }
