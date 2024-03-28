@@ -13,7 +13,7 @@ for (int i = n; i >= 1; i--) {
             printf("0 ");
         }else{
             printf("1 ");
-        }
+        } 
         
     }
 } 
